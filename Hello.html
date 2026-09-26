@@ -1,1 +1,512 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nourish | Zero Hunger</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">🌱 Nourish<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#marketplace">Farmers</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#donate">School Meals</a></li>
+            </ul>
+
+            <a href="#volunteer" class="nav-button">Get Involved</a>
+
+            <button class="menu-btn" id="menuBtn"
+                aria-label="Toggle navigation">☰</button>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">SDG 2 • ZERO HUNGER</span>
+
+            <h1>Good Food.<br>
+                <span>Fair Chances.</span><br>
+                Zero Hunger.
+            </h1>
+
+            <p>
+                Connecting local farmers, supporting families, and
+                building a future where everyone has access to
+                nutritious food.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn primary-btn">Explore Our Mission</a>
+                <a href="#donate" class="btn secondary-btn">Support a Cause</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="food-circle">
+                <span>🥬</span>
+                <span>🥕</span>
+                <span>🍅</span>
+                <span>🌽</span>
+                <span>🥑</span>
+            </div>
+            <div class="image-card">
+                <h3>🌍 Our Goal</h3>
+                <p>A hunger-free future for everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section about" id="about">
+        <div class="section-heading">
+            <span class="tag">WHO WE ARE</span>
+            <h2>Small Actions. <span>Big Impact.</span></h2>
+            <p>
+                Nourish is a student-led NGO concept inspired by
+                the United Nations Sustainable Development Goal 2.
+            </p>
+        </div>
+
+        <div class="card-container">
+            <div class="info-card">
+                <div class="icon">🌾</div>
+                <h3>Our Mission</h3>
+                <p>
+                    Connect communities with local food systems,
+                    nutritious meals, and affordable food resources.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">💚</div>
+                <h3>Our Vision</h3>
+                <p>
+                    Create a world where everyone has access to
+                    sufficient and nutritious food.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">🌍</div>
+                <h3>Our Goal</h3>
+                <p>
+                    Support farmers, reduce food waste, and
+                    encourage sustainable agriculture.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmers Marketplace -->
+    <section class="section marketplace" id="marketplace">
+        <div class="section-heading">
+            <span class="tag">FARMERS MARKETPLACE</span>
+            <h2>Fresh From <span>The Farm.</span></h2>
+            <p>
+                Discover fresh produce and support local farmers.
+                These are sample listings for our college project.
+            </p>
+        </div>
+
+        <div class="market-controls">
+            <input type="text" id="searchInput"
+                placeholder="Search for produce...">
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="vegetable">Vegetables</option>
+                <option value="fruit">Fruits</option>
+                <option value="grain">Grains & Pulses</option>
+            </select>
+        </div>
+
+        <div class="product-container" id="productContainer">
+
+            <div class="product-card" data-category="vegetable">
+                <div class="product-image">🍅</div>
+                <div class="product-details">
+                    <span class="product-tag">Vegetable</span>
+                    <h3>Fresh Tomatoes</h3>
+                    <p>Locally grown produce</p>
+                    <div class="product-bottom">
+                        <strong>₹30/kg</strong>
+                        <button class="small-btn interest-btn"
+                            data-name="Fresh Tomatoes">Interested</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="vegetable">
+                <div class="product-image">🥬</div>
+                <div class="product-details">
+                    <span class="product-tag">Vegetable</span>
+                    <h3>Fresh Spinach</h3>
+                    <p>Seasonal green vegetables</p>
+                    <div class="product-bottom">
+                        <strong>₹20/bunch</strong>
+                        <button class="small-btn interest-btn"
+                            data-name="Fresh Spinach">Interested</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="fruit">
+                <div class="product-image">🥭</div>
+                <div class="product-details">
+                    <span class="product-tag">Fruit</span>
+                    <h3>Seasonal Mangoes</h3>
+                    <p>Fresh from the orchard</p>
+                    <div class="product-bottom">
+                        <strong>₹80/kg</strong>
+                        <button class="small-btn interest-btn"
+                            data-name="Seasonal Mangoes">Interested</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="grain">
+                <div class="product-image">🫘</div>
+                <div class="product-details">
+                    <span class="product-tag">Grains & Pulses</span>
+                    <h3>Whole Lentils</h3>
+                    <p>Protein-containing food</p>
+                    <div class="product-bottom">
+                        <strong>₹90/kg</strong>
+                        <button class="small-btn interest-btn"
+                            data-name="Whole Lentils">Interested</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="disclaimer">
+            Note: All prices and product listings are illustrative.
+            This is not a live shopping marketplace.
+        </p>
+    </section>
+
+    <!-- Food Rescue Section -->
+    <section class="section food-rescue" id="food-rescue">
+        <div class="rescue-content">
+            <span class="tag">FOOD RESCUE NETWORK</span>
+            <h2>Don't Waste Food.<br><span>Share Hope.</span></h2>
+            <p>
+                Our food rescue initiative aims to connect restaurants,
+                food donors, and community organizations to help
+                surplus food reach people who need it.
+            </p>
+            <a href="#donate" class="btn primary-btn">Support Food Rescue</a>
+        </div>
+
+        <div class="rescue-illustration">
+            <div>🥖</div>
+            <div>🍎</div>
+            <div>🥫</div>
+            <p>Good food deserves a second chance.</p>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section class="section nutrition" id="nutrition">
+        <div class="section-heading">
+            <span class="tag">NUTRITION HUB</span>
+            <h2>Healthy Food, <span>Made Simple.</span></h2>
+            <p>
+                Explore general food guidance and affordable
+                meal ideas for everyday life.
+            </p>
+        </div>
+
+        <div class="nutrition-container">
+
+            <div class="calculator">
+                <h3>🥗 Nutrition Guide</h3>
+                <p>Choose your preferences to get meal suggestions.</p>
+
+                <form id="nutritionForm">
+                    <label for="foodType">Food Preference</label>
+                    <select id="foodType">
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="eggetarian">Eggetarian</option>
+                        <option value="nonvegetarian">Non-Vegetarian</option>
+                    </select>
+
+                    <label for="foodBudget">Food Budget</label>
+                    <select id="foodBudget">
+                        <option value="low">Budget Friendly</option>
+                        <option value="medium">Moderate</option>
+                        <option value="high">Flexible</option>
+                    </select>
+
+                    <label for="mealGoal">Meal Preference</label>
+                    <select id="mealGoal">
+                        <option value="balanced">Balanced Meals</option>
+                        <option value="protein">Protein-Rich Foods</option>
+                        <option value="school">School Lunch Ideas</option>
+                    </select>
+
+                    <button type="submit" class="btn primary-btn">
+                        Generate Food Guide
+                    </button>
+                </form>
+
+                <div id="nutritionResult" class="result-box"></div>
+
+                <p class="disclaimer">
+                    This is a general educational guide, not medical
+                    advice or a personalized calorie calculator.
+                </p>
+            </div>
+
+            <div class="meal-ideas">
+                <h3>Affordable Meal Ideas</h3>
+
+                <div class="meal-card">
+                    <div>🍛</div>
+                    <div>
+                        <h4>Dal, Rice & Vegetables</h4>
+                        <p>A familiar combination of grains, pulses, and vegetables.</p>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <div>🫓</div>
+                    <div>
+                        <h4>Roti, Chana & Greens</h4>
+                        <p>A meal idea featuring grains, pulses, and vegetables.</p>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <div>🥣</div>
+                    <div>
+                        <h4>Vegetable Khichdi</h4>
+                        <p>A simple one-pot meal using rice, dal, and vegetables.</p>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <div>🥜</div>
+                    <div>
+                        <h4>Roasted Chana & Fruit</h4>
+                        <p>A simple snack using commonly available foods.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- School Meals / Donation -->
+    <section class="section donation" id="donate">
+        <div class="section-heading">
+            <span class="tag">SCHOOL NUTRITION CONNECT</span>
+            <h2>Every Child Deserves <span>A Meal.</span></h2>
+            <p>
+                Explore ways to support school meal programs
+                and community nutrition initiatives.
+            </p>
+        </div>
+
+        <div class="donation-container">
+            <div class="donation-info">
+                <div class="icon">🍱</div>
+                <h3>Support School Meals</h3>
+                <p>
+                    Contributions and community participation can
+                    help support school meal initiatives through
+                    authorized partner organizations.
+                </p>
+
+                <ul>
+                    <li>✓ School meal support</li>
+                    <li>✓ Nutrition education</li>
+                    <li>✓ Food supply coordination</li>
+                    <li>✓ Community volunteering</li>
+                </ul>
+
+                <div class="sample-stats">
+                    <div>
+                        <h3>01</h3>
+                        <p>Choose an initiative</p>
+                    </div>
+                    <div>
+                        <h3>02</h3>
+                        <p>Connect with partners</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donation-form">
+                <h3>Support Inquiry</h3>
+                <p>Fill out this sample form to demonstrate the process.</p>
+
+                <form class="demoForm">
+                    <label for="donorName">Full Name</label>
+                    <input type="text" id="donorName"
+                        placeholder="Enter your name" required>
+
+                    <label for="donorEmail">Email Address</label>
+                    <input type="email" id="donorEmail"
+                        placeholder="Enter your email" required>
+
+                    <label for="donationType">Area of Support</label>
+                    <select id="donationType" required>
+                        <option value="">Select an option</option>
+                        <option>School Meals</option>
+                        <option>Nutrition Education</option>
+                        <option>Food Supplies</option>
+                        <option>Volunteering</option>
+                    </select>
+
+                    <label for="donorMessage">Message</label>
+                    <textarea id="donorMessage"
+                        placeholder="How would you like to help?"></textarea>
+
+                    <button type="submit" class="btn primary-btn">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <p class="disclaimer">
+            This form is a demonstration only. It does not process
+            payments or transmit personal information.
+        </p>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section class="section volunteer" id="volunteer">
+        <div class="section-heading">
+            <span class="tag">JOIN OUR COMMUNITY</span>
+            <h2>Be Part of <span>The Change.</span></h2>
+            <p>
+                Every small action can help build a stronger
+                and more food-secure community.
+            </p>
+        </div>
+
+        <div class="volunteer-container">
+            <div class="volunteer-card">
+                <div class="icon">🌱</div>
+                <h3>Farmer Support</h3>
+                <p>Help spread awareness about local farmers and sustainable agriculture.</p>
+            </div>
+
+            <div class="volunteer-card">
+                <div class="icon">📚</div>
+                <h3>Nutrition Education</h3>
+                <p>Help communities learn about food groups and food safety.</p>
+            </div>
+
+            <div class="volunteer-card">
+                <div class="icon">🤝</div>
+                <h3>Community Events</h3>
+                <p>Participate in awareness drives and approved food support activities.</p>
+            </div>
+        </div>
+
+        <div class="volunteer-action">
+            <label for="volunteerInterest">Choose your interest:</label>
+            <select id="volunteerInterest">
+                <option value="farmer">Farmer Support</option>
+                <option value="nutrition">Nutrition Education</option>
+                <option value="food">Food Awareness</option>
+                <option value="events">Community Events</option>
+            </select>
+            <button class="btn primary-btn" id="volunteerBtn">
+                Register Interest
+            </button>
+        </div>
+    </section>
+
+    <!-- Food Waste Quiz -->
+    <section class="section quiz-section" id="quiz">
+        <div class="section-heading">
+            <span class="tag">LEARN & PLAY</span>
+            <h2>Food-Smart <span>Quiz.</span></h2>
+            <p>Test your knowledge about reducing food waste.</p>
+        </div>
+
+        <div class="quiz-box">
+            <h3>Which action can help reduce food waste at home?</h3>
+
+            <button class="quiz-option" data-correct="false">
+                Buying more food than you can use
+            </button>
+
+            <button class="quiz-option" data-correct="true">
+                Planning meals and storing food properly
+            </button>
+
+            <button class="quiz-option" data-correct="false">
+                Ignoring food storage instructions
+            </button>
+
+            <p id="quizResult"></p>
+
+            <button class="btn secondary-btn" id="resetQuiz">
+                Try Again
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <a href="#home" class="logo footer-logo">🌱 Nourish<span>.</span></a>
+                <p>
+                    Good Food. Fair Chances. Zero Hunger.
+                    A student project inspired by UN Sustainable
+                    Development Goal 2.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="#about">About Us</a>
+                <a href="#marketplace">Farmers Marketplace</a>
+                <a href="#nutrition">Nutrition Hub</a>
+                <a href="#donate">School Meals</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Learn More</h3>
+                <a href="https://sdgs.un.org/goals/goal2" target="_blank">
+                    UN SDG 2
+                </a>
+                <a href="https://www.fao.org/" target="_blank">
+                    Food and Agriculture Organization
+                </a>
+                <a href="#volunteer">Volunteer</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Nourish. College Project Prototype.</p>
+            <p>Made with 💚 for a hunger-free future.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
